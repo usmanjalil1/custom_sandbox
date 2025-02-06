@@ -1,0 +1,8 @@
+services:
+  sandbox:
+    build: ./sandbox_service
+    container_name: sandbox_container
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./sandbox_data:/sandbox

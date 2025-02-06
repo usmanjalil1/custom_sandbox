@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: sandbox-env
+Version: 0.1
+Summary: Python client for sandbox environment
+Author: Usman Jalil
+Author-email: ujalil@truemeridian.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: summary
