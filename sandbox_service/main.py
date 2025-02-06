@@ -1,9 +1,18 @@
 from fastapi import FastAPI, File, UploadFile
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import subprocess
 import os 
 
 app = FastAPI(title = "Custom Sandbox Service", version = "0.1", description = "A custom sandbox service for running shell commands, Python code, and installing/uninstalling dependencies.", docs_url="/_docs")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 UPLOAD_DIR = "/sandbox_env"  
 
