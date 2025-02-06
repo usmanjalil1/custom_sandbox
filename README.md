@@ -6,7 +6,7 @@
 docker compose up --build -d
 ```
 
-### Install `Sandox-env` Package
+### Install `Sandbox-env` Package
 
 ```
 pip install ./sandbox_env
